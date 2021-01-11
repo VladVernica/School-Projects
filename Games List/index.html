@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ranchers|Quicksand">
+    <title>Games World</title>
+</head>
+<body>
+    <header>
+        <h1>GAMES WORLD</h1>
+    </header>
+    <section id="add_section" class="edit_section hidden">
+        <span>Title</span>
+        <input type="text" id="edit_section_title">
+        <span>Genre</span>
+        <input type="text" id="edit_section_genre">
+        <span>Publisher</span>
+        <input type="text" id="edit_section_publisher">
+        <span>Release Date</span>
+        <input type="date" id="edit_section_date">
+        <span>Image URL</span>
+        <input type="text" id="edit_section_image">
+        <span>Description</span>
+        <textarea rows="1" id="edit_section_description"></textarea>
+        <div id="add_section_buttons">
+            <button id="game_button_index_save" class="game_button_index">save</button>
+            <button id="game_button_index_close" class="game_button_index">close</button>
+        </div>
+    </section>
+    <section id="table_section">
+        <button id="game_button_index_add" class="game_button_index">+ add</button>
+        <button id="game_button_index_regenerate" class="game_button_index">regenerate</button>
+        <!-- <div>
+            <div class="table_row_index">
+                <div id="r1c1" class="game_wrapper_index">
+                    <img src="https://i.pinimg.com/564x/07/98/29/079829b12d2c514eec9dc50a78b05d18.jpg" class="game_img_index">
+                    <a href="" class="game_title_index">Grand Theft Auto V</a>
+                    <div class="game_buttons_index">
+                        <button class="game_button_index">details</button>
+                        <button class="game_button_index">edit</button>
+                        <button class="game_button_index">delete</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div id="table_index">
+            <div id="r0" class="table_row_index">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="functions.js"></script>
+</body>
+</html>

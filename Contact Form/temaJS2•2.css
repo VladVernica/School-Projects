@@ -1,0 +1,160 @@
+body {
+    font-family: 'Voltaire', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: linen;
+}
+
+header {
+    height: 300px;
+    margin: 0 0 100px 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-image: url("https://images.pexels.com/photos/144171/pexels-photo-144171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-size: cover;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-color: tomato;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+    line-height: 300px;
+}
+
+#titleName {
+    color: tomato;
+}
+
+#titleName {
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#confirmation {
+    width: 600px;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: seagreen;
+    background-color: mintcream;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: seagreen;
+}
+
+#confirmationLeft {
+    display: flex;
+    flex-direction: row;
+}
+
+#thankYou {
+    margin: 0 0 0 10px;
+    padding: 0;
+    line-height: 15px;
+}
+
+#closeButton {
+    cursor: pointer;
+}
+
+article {
+    width: 600px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: slategray;
+    background-color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left {
+    width: 295px;
+    height: 100%;
+}
+
+#right {
+    width: 295px;
+    background-color: pink;
+    background-image: url("https://images.pexels.com/photos/995043/pexels-photo-995043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#firstName, #lastName {
+    font-family: 'Voltaire', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 270px;
+    height: 30px;
+    margin: 0;
+    padding: 0 10px 0 10px;
+    border-style: solid;
+    border-width: 2px;
+    outline: none;
+}
+
+#lastName {
+    margin-top: 20px;
+}
+
+#genderDiv {
+    margin: 20px 0 20px 0;
+    padding: 0;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+#message {
+    font-family: 'Voltaire', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 270px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
+    background-color: cornsilk;
+    border-style: solid;
+    border-width: 2px;
+    border-color: slategray;
+    outline: none;
+    cursor: pointer;
+    float: right;
+}
+
+.hiddenElement {
+    display: none !important;
+}
+
+.grayBorder {
+    border-color: slategray;
+}
+
+.redBorder {
+    border-color: tomato;
+}

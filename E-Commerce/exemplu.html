@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <script>
+        async function getProduse() {
+            var produse = await fetch("https://emag-v1.firebaseio.com/produse/.json").then(r => r.json());
+            return produse;
+        }
+        async function displayProduse(produseAsPromise) {
+            var produse = await produseAsPromise;
+            var generatedHtml = '';
+            Object.keys(produse).forEach(idProdus => {
+                var produs = produse[idProdus];
+                generatedHtml += generateHtmlForProdus(idProdus, produs);
+            });
+            document.getElementById('listaProduse').innerHTML = generatedHtml;
+        }
+        function generateHtmlForProdus(idProdus, produs) {
+            var generatedHtml = `
+<div style="float: left; border: 1px solid; border-radius: 5px; margin: 20px;">
+<img src="${produs.imagine}" style="max-height: 150px;" />
+<div>${produs.nume}</div>
+<div>${produs.pret}</div>
+<button onclick="showDetails('${idProdus}')">DETALII</button>
+</div>
+`;
+            return generatedHtml;
+        }
+        function showDetails(idProdus) {
+            window.location = `./b.html?idProdus=${idProdus}`;
+        }
+    </script>
+</head>
+
+<body onload="displayProduse(getProduse());">
+    <div id="listaProduse"></div>
+</body>
+
+</html>

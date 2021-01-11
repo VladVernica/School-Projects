@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CART</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="main.js"></script>
+</head>
+
+<body onload="fillCartContent()">
+    <div id="topBar">
+        <a href="index.html">
+            <div id="topBarLogoDiv">
+                <span id="topBarLogoW1">VERNI</span>
+                <span id="topBarLogoW2">market</span>
+            </div>
+        </a>
+    </div>
+    <div id="content">
+        <div id="cartBox">
+            <h1 id="cartBoxTitle">Coș de cumpărături</h1>
+            <div class="cartBoxTableDiv">
+                <table class="cartBoxTable">
+                    <thead id="cartBoxTableThead">
+                        <th class="cartBoxTableCell">Imagine</th>
+                        <th class="cartBoxTableCellName">Nume</th>
+                        <th class="cartBoxTableCell">Preț</th>
+                        <th class="cartBoxTableCell">Cantitate</th>
+                        <th class="cartBoxTableCell">Subtotal</th>
+                        <th class="cartBoxTableCell"></th>
+                    </thead>
+                    <tbody id="cartBoxTableTbody">
+                        <!-- Hard typed product examples - START -->
+                        <tr class="cartBoxTableTr hidden">
+                            <td class="adminBoxTableCellImage"><img class="cartBoxTableImage" src="https://goo.gl/mj6Gnb"></td>
+                            <td class="cartBoxTableCellName">iPhone X</td>
+                            <td class="cartBoxTableCell">5399</td>
+                            <td class="cartBoxTableCell">
+                                <a class="cartBoxTableButton" onclick="">-</a>
+                                <div id="cartBoxTableQuantity">3</div>
+                                <a class="cartBoxTableButton" onclick="">+</a>
+                            </td>
+                            <td class="cartBoxTableCell">16197</td>
+                            <td class="cartBoxTableCell"><a class="cartBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="cartBoxTableTr hidden">
+                            <td class="adminBoxTableCellImage"><img class="cartBoxTableImage" src="https://goo.gl/1AZDZo"></td>
+                            <td class="cartBoxTableCellName">Huawei P20 Pro</td>
+                            <td class="cartBoxTableCell">3899</td>
+                            <td class="cartBoxTableCell">
+                                <a class="cartBoxTableButton" onclick="">-</a>
+                                <div id="cartBoxTableQuantity">1</div>
+                                <a class="cartBoxTableButton" onclick="">+</a>
+                            </td>
+                            <td class="cartBoxTableCell">3899</td>
+                            <td class="cartBoxTableCell"><a class="cartBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="cartBoxTableTr hidden">
+                            <td class="adminBoxTableCellImage"><img class="cartBoxTableImage" src="https://goo.gl/quukdq"></td>
+                            <td class="cartBoxTableCellName">OnePlus 6</td>
+                            <td class="cartBoxTableCell">3699</td>
+                            <td class="cartBoxTableCell">
+                                <a class="cartBoxTableButton" onclick="">-</a>
+                                <div id="cartBoxTableQuantity">2</div>
+                                <a class="cartBoxTableButton" onclick="">+</a>
+                            </td>
+                            <td class="cartBoxTableCell">7398</td>
+                            <td class="cartBoxTableCell"><a class="cartBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="cartBoxTableTr hidden">
+                            <td class="cartBoxTableCellImage"><img class="cartBoxTableImage" src="https://goo.gl/ihbBhr"></td>
+                            <td class="cartBoxTableCellName">iPhone 8</td>
+                            <td class="cartBoxTableCell">3999</td>
+                            <td class="cartBoxTableCell">
+                                <a class="cartBoxTableButton" onclick="">-</a>
+                                <div id="cartBoxTableQuantity">4</div>
+                                <a class="cartBoxTableButton" onclick="">+</a>
+                            </td>
+                            <td class="cartBoxTableCell">1596</td>
+                            <td class="cartBoxTableCell"><a class="cartBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- Hard typed product examples - END -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="cartBoxRightDiv">
+                <!-- Hard typed right info - START -->
+                <div class="cartBoxRightText hidden">Produse: 3</div>
+                <div class="cartBoxRightText hidden">TVA: 0 %</div>
+                <div class="cartBoxRightText hidden">Transport: 0 lei</div>
+                <div id="cartBoxRightTotal" class="hidden">Total: 29090 LEI</div>
+                <button id="cartBoxRightButtonBuy hidden" class="hidden">🠞 CUMPARA</button>
+                <!-- Hard typed right info - START -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

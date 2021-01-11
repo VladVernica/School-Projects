@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tema JavaScript 2</title>
+    <link rel="stylesheet" type="text/css" href="temaJS2.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <script src="temaJS2.js"></script>
+</head>
+
+
+
+<body>
+
+    <div id="header">
+        <h1>Tema JavaScript 2 <span id="name">Vlad Vernică</span></h1>
+    </div>
+
+
+    <div id="allDivs">
+    <div class="homework">
+        <h2>♣<br>Tema 01</h2>
+        <p class="homeworkText">
+            O funcție care primește un șir de caractere
+            și returnează cifrele din șirul respectiv.
+        </p>
+        <input type="text" id="h01-input1" placeholder="string">
+        <button class="doitButton" onclick="temaJS201(document.getElementById('h01-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS201clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result01">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 02</h2>
+        <p class="homeworkText">
+            O funcție care primește un șir de caractere
+            și returnează doar literele din șirul respectiv.
+        </p>
+        <input type="text" id="h02-input1" placeholder="string">
+        <button class="doitButton" onclick="temaJS202(document.getElementById('h02-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS202clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result02">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 03</h2>
+        <p class="homeworkText">
+            O funcție care primește un șir de caractere
+            și returnează primele 5 litere (dacă există).
+        </p>
+        <input type="text" id="h03-input1" placeholder="string">
+        <button class="doitButton" onclick="temaJS203(document.getElementById('h03-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS203clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result03">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 04</h2>
+        <p class="homeworkText">
+            O funcție care primește o listă de șiruri de caractere
+            și returnează șirurile concatenate.
+        </p>
+        <input type="text" id="h04-input1" placeholder="strings sparated by space">
+        <button class="doitButton" onclick="temaJS204(document.getElementById('h04-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS204clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result04">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 05</h2>
+        <p class="homeworkText">
+            O funcție care primește o listă de șiruri de caractere
+            și returnează cifrele din toate șirurile.
+        </p>
+        <input type="text" id="h05-input1" placeholder="strings sparated by space">
+        <button class="doitButton" onclick="temaJS205(document.getElementById('h05-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS205clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result05">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 06</h2>
+        <p class="homeworkText">
+            O funcție care primește o listă de șiruri de caractere
+            și returnează lista de șiruri de caractere inversate.
+        </p>
+        <input type="text" id="h06-input1" placeholder="strings sparated by space">
+        <button class="doitButton" onclick="temaJS206(document.getElementById('h06-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS206clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result06">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 07</h2>
+        <p class="homeworkText">
+            Calculează factorialul unui număr.
+        </p>
+        <input type="number" id="h07-input1" placeholder="number">
+        <button class="doitButton" onclick="temaJS207(document.getElementById('h07-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS207clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result07">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 08</h2>
+        <p class="homeworkText">
+            Calculează cel mai mare divizor comun al 2 numere.
+        </p>
+        <input type="number" id="h08-input1" class="shorterInput" placeholder="number a">
+        <input type="number" id="h08-input2" class="shorterInput" placeholder="number b">
+        <button class="doitButton" onclick="temaJS208(document.getElementById('h08-input1').value, document.getElementById('h08-input2').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS208clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result08">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 09</h2>
+        <p class="homeworkText">
+            Calculează cel mai mic multiplu comun al 2 numere.
+        </p>
+        <input type="number" id="h09-input1" class="shorterInput" placeholder="number a">
+        <input type="number" id="h09-input2" class="shorterInput" placeholder="number b">
+        <button class="doitButton" onclick="temaJS209(document.getElementById('h09-input1').value, document.getElementById('h09-input2').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS209clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result09">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 10</h2>
+        <p class="homeworkText">
+            Returnează un array care să conțină toți divizorii unui număr
+            (ex pentru 64: trebuie să returneze [2,4,8,16,32]).
+        </p>
+        <input type="number" id="h10-input1" placeholder="number">
+        <button class="doitButton" onclick="temaJS210(document.getElementById('h10-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS210clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result10">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 11</h2>
+        <p class="homeworkText">
+            O funcție care verifică dacă un număr
+            este palindrom (ex: 121, 1234321).
+        </p>
+        <input type="number" id="h11-input1" placeholder="number">
+        <button class="doitButton" onclick="temaJS211(document.getElementById('h11-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS211clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result11">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 12</h2>
+        <p class="homeworkText">
+            O funcție care sortează numerele pare
+            dintr-un șir de numere primit ca parametru.
+        </p>
+        <input type="text" id="h12-input1" placeholder="numbers sparated by space">
+        <button class="doitButton" onclick="temaJS212(document.getElementById('h12-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS212clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result12">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 13</h2>
+        <p class="homeworkText">
+            O funcție care primește ca parametru un array de numere.
+            Aceasta sortează ascendent numerele pare și
+            descendent numerele impare, în cadrul aceluiași array primit ca parameru.
+        </p>
+        <input type="text" id="h13-input1" placeholder="numbers sparated by space">
+        <button class="doitButton" onclick="temaJS213(document.getElementById('h13-input1').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS213clear()">CLEAR</button>
+        <br>
+        <div class="result" id="result13">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 14</h2>
+        <p class="homeworkText">
+                O funcție care primește 2 parametri (un array și un număr).
+                Folosind binary search, verificați dacă numărul primit
+                ca parametru se găsește în array.
+        </p>
+        <input type="text" id="h14-input1" placeholder="numbers sparated by space">
+        <input type="number" id="h14-input2" class="shorterInput" placeholder="number">
+        <button class="doitButton" onclick="temaJS214(trans(document.getElementById('h14-input1').value), document.getElementById('h14-input2').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS214clear()">CLEAR</button>
+        <br>
+        <div class="longerResult" id="result14">result</div>
+    </div>
+
+    <div class="homework">
+        <h2>♣<br>Tema 15</h2>
+        <p class="homeworkText">
+                O funcție care implementează binary search pentru a verifica
+                dacă un număr se regăsește într-un array.
+                După ce se termină execuția funcției trebuie să puteți afișa
+                de câte ori s-a apelat funcția recursiv.
+                (hint: puteți folosi 2 functii sau variabilă globala).
+        </p>
+        <input type="text" id="h15-input1" placeholder="numbers sparated by space">
+        <input type="number" id="h15-input2" class="shorterInput" placeholder="number">
+        <button class="doitButton" onclick="temaJS215(trans(document.getElementById('h15-input1').value), document.getElementById('h15-input2').value)">DO IT!</button>
+        <button class="clearButton" onclick="temaJS215clear()">CLEAR</button>
+        <br>
+        <div class="longerResult" id="result15">result</div>
+        <h2 id="theEnd">✿ the end ✿</h2>
+    </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: lightsteelblue;
+    margin: 0;
+    padding: 0 0 100px 0;
+}
+
+header {
+    height: 1000px;
+    margin: -20px 0 0 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    background-image: url('https://goo.gl/CC8m7W');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+
+h1 {
+    line-height: 1000px;
+    font-size: 50px;
+}
+
+#vlad {
+    font-family: 'Lobster';
+    font-size: 30px;
+    color: tomato;
+}
+
+#bigDiv {
+    width: 400px;
+    margin: auto;
+    margin-top: -200px;
+    padding: 100px;
+    background-color: whitesmoke;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 50px 0 25px 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}
+
+#optionsButtonDiv {
+    display: flex;
+    flex-direction: row;
+}
+
+#playButton {
+    margin: 0 0 0 60px;
+    padding: 0;
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.redText {
+    color: tomato;
+}
+
+.radio {
+    background-color: tomato;
+}

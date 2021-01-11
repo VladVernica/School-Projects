@@ -1,0 +1,138 @@
+body {
+    font-family: 'Cairo', Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    padding-bottom: 100px;
+}
+
+#header {
+    height: 1000px;
+    width: 99.9%;
+    margin: -40px;
+    margin-bottom: 150px;
+    padding: 0 25px 0 25px;
+    text-align: center;
+    color: white;
+    background-image: url('https://goo.gl/CC8m7W');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-style: double;
+    border-width: 5px;
+    border-color: firebrick;
+}
+
+h1 {
+    line-height: 800px;
+    vertical-align: middle;
+    font-size: 50px;
+}
+
+#name {
+    font-family: 'Lobster';
+    font-weight: bold;
+    font-size: 30px;
+    color: wheat;
+}
+
+#allDivs {
+    width: 700px;
+    background-color: white;
+    margin: auto;
+    margin-top: -300px;
+}
+
+.homework {
+    width: 700px;
+    margin: auto;
+    padding: 25px 25px 50px 25px;
+    overflow: hidden;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#theEnd {
+    font-family: 'Lobster';
+    margin-top: 100px;
+}
+
+p {
+    font-size: 16px;
+    color: grey;
+    margin: 30px 80px 30px 80px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    font-family: 'Cairo';
+    font-size: 16px;
+}
+
+.shorterInput {
+    width: 90px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    outline: none;
+    font-family: 'Cairo';
+    font-size: 16px;
+}
+
+.doitButton {
+    background-color: limegreen;
+}
+
+.doitButton:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
+
+.clearButton {
+    background-color: firebrick;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+    background-color: darkred;
+}
+
+.result {
+    height: 40px;
+    width: 430px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: dashed;
+    margin: 10px auto 0 auto;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.longerResult {
+    height: 40px;
+    width: 540px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: dashed;
+    margin: 10px auto 0 auto;
+    line-height: 40px;
+    vertical-align: middle;
+    font-size: 16px;
+}

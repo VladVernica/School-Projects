@@ -1,0 +1,222 @@
+<html>
+<head>
+    <title>Tema JavaScript</title>
+    <script src="temaJS.js"></script>
+    <link rel="stylesheet" type="text/css" href="temaJS.css">
+</head>
+<body>
+    <div id="titlu">
+        <h1>Tema JavaScript <span>/ Vlad Vernică</span></h1>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 01</h2>
+        <p>
+            O funcție care compara 2 valori si
+            returneaza true daca sunt egale si
+            false daca nu sunt egale.
+        </p>
+        <input type="number" id="t1a" placeholder="a">
+        <input type="number" id="t1b" placeholder="b">
+        <br>
+        <button onclick="temaJS01(document.getElementById('t1a').value, document.getElementById('t1b').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 02</h2>
+        <p>
+            O funcție care compara 2 valori si
+            returneaza -1 daca primul e mai mic
+            decat al doilea, 0 daca sunt egale si
+            1 daca primul e mai mare decat al doilea.
+        </p>
+        <input type="number" id="t2a" placeholder="a">
+        <input type="number" id="t2b" placeholder="b">
+        <br>
+        <button onclick="temaJS02(document.getElementById('t2a').value, document.getElementById('t2b').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 03</h2>
+        <p>
+            O funcție care compara 2 valori si
+            returneaza maximul dintre cele 2.
+        </p>
+        <input type="number" id="t3a" placeholder="a">
+        <input type="number" id="t3b" placeholder="b">
+        <br>
+        <button onclick="temaJS03(document.getElementById('t3a').value, document.getElementById('t3b').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 04</h2>
+        <p>
+            O funcție care compara 2 valori si
+            returneaza minimul dintre cele 2.
+        </p>
+        <input type="number" id="t4a" placeholder="a">
+        <input type="number" id="t4b" placeholder="b">
+        <br>
+        <button onclick="temaJS04(document.getElementById('t4a').value, document.getElementById('t4b').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 05</h2>
+        <p>
+            O functie care intoarce suma primelor
+            N numere naturale pozitive.
+        </p>
+        <input type="number" id="t5n" placeholder="N">
+        <br>
+        <button onclick="temaJS05(document.getElementById('t5n').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 06</h2>
+        <p>
+            O funcție care verifica daca N este numar prim
+            (restul impartirii la 1 si la N == 0).
+        </p>
+        <input type="number" id="t6n" placeholder="N">
+        <br>
+        <button onclick="temaJS06(document.getElementById('t6n').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 07</h2>
+        <p>
+            O funcție care intoarce suma primelor
+            N numere prime.
+        </p>
+        <input type="number" id="t7n" placeholder="N">
+        <br>
+        <button onclick="temaJS07(document.getElementById('t7n').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 08</h2>
+        <p>
+            O funcție care primeste un parametru
+            de tip string si intoarce inversul
+            acestuia (abc => cba).
+        </p>
+        <input type="text" id="t8str" placeholder="string">
+        <br>
+        <button onclick="temaJS08(document.getElementById('t8str').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 09</h2>
+        <p>
+            O funcție care intoarce produsul primelor
+            N numere impare pozitive.
+        </p>
+        <input type="number" id="t9n" placeholder="N">
+        <br>
+        <button onclick="temaJS09(document.getElementById('t9n').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 10</h2>
+        <p>
+            O funcție care primeste 2 parametri
+            (arr - array de nr intregi si x - numar)
+            si verifica daca x exista in array.
+        </p>
+        <input type="text" id="t10arr" placeholder="Folositi spatiul intre numere">
+        <input type="number" id="t10x" placeholder="x">
+        <br>
+        <button onclick="temaJS10(document.getElementById('t10arr').value, document.getElementById('t10x').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 11</h2>
+        <p>
+            O funcție care intoarce maximul dintr-un
+            array primit ca parametru.
+        </p>
+        <input type="text" id="t11arr" placeholder="Folositi spatiul intre numere">
+        <br>
+        <button onclick="temaJS11(document.getElementById('t11arr').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 12</h2>
+        <p>
+            O funcție care intoarce suma dintre max
+            si min dintr-un array primit ca parametru.
+        </p>
+        <input type="text" id="t12arr" placeholder="Folositi spatiul intre numere">
+        <br>
+        <button onclick="temaJS12(document.getElementById('t12arr').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 13</h2>
+        <p>
+            O funcție care verifica daca exista duplicate
+            intr-un array primit ca parametru.
+        </p>
+        <input type="text" id="t13arr" placeholder="Folositi spatiul intre numere">
+        <br>
+        <button onclick="temaJS13(document.getElementById('t13arr').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 14</h2>
+        <p>
+            O funcție care intoarce produsul numerelor
+            pozitive dintr-un array primit ca parametru.
+        </p>
+        <input type="text" id="t14arr" placeholder="Folositi spatiul intre numere">
+        <br>
+        <button onclick="temaJS14(document.getElementById('t14arr').value)">
+            Do it!
+        </button>
+    </div>
+
+    <div class="tema">
+        <h2>Tema 15</h2>
+        <p>
+            O funcție care verifica daca un string
+            primit ca parametru este palindrom
+            (inversul == originalul, ex: abcba == abcba,
+            abca != acba).
+        </p>
+        <input type="text" id="t15str" placeholder="string">
+        <br>
+        <button onclick="temaJS15(document.getElementById('t15str').value)">
+            Do it!
+        </button>
+    </div>
+
+</body>
+</html>
+
+

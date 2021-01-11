@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(0, 105, 217);
+}
+
+#header_section {
+    margin: 2vh auto;
+    padding: 1% 2% 0.3% 2%;
+    width: 80vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 1em;
+}
+
+#header_section_input {
+    width: 60%;
+}
+
+#header_section_buttons {
+    overflow: hidden;
+    max-width: 20%;
+}
+
+.btn-primary:focus,
+.btn-primary:active{
+    box-shadow:none !important;
+    outline:0px !important;
+}

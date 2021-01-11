@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 150px 250px 150px 250px;
+    font-family: 'Gugi', Arial, Helvetica, sans-serif;
+}
+
+.top_wrapper {
+    width: 100%;
+    height: 100px;
+    margin: 0 0 50px 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    background-color: royalblue;
+    color: white;
+    border-radius: 25px;
+}
+
+.bottom_wrapper {
+    width: 100%;
+}
+
+h1 {
+    margin: 0 0 0 25px;
+    line-height: 100px;
+    vertical-align: middle;
+    font-size: 60px;
+    font-family: 'Montez';
+}
+
+h3 {
+    margin: 0;
+    font-size: 40px;
+    font-family: 'Montez';
+}
+
+input {
+    height: 45px;
+    width: 225px;
+    margin: 0 20px 0 0;
+    padding: 0 15px 0 15px;
+    font-family: 'Gugi';
+    font-size: 15px;
+    text-align: center;
+    border-style: none;
+    border-bottom-style: dotted;
+    border-bottom-width: 3px;
+    outline: none;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+    font-family: 'Gugi';
+    font-size: 15px;
+}
+
+#contact_button, #menu_button {
+    margin-top: 25px;
+    background-color: transparent;
+}
+
+#search_button {
+    width: 200px;
+}
+
+table {
+    width: 100%;
+    margin-top: 25px;
+}
+
+td {
+    height: 200px;
+    font-size: 15px;
+}
+
+.td_img {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+.td_ingredients {
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.td_button {
+    width: 100px;
+}
+
+.menu_img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+}
+
+#product_img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    float: left;
+    margin: 0 25px 25px 0;
+    border-radius: 25px;
+}

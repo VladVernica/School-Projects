@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tema JS 2•1</title>
+        <link rel="stylesheet" href="temaJS2•1.css">
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <h1>Tema JavaScript 2•1 <span id="vlad">Vlad Vernica</span></h1>
+        </header>
+        <div id="bigDiv">
+            <h2>ROCK / PAPER / SCISSORS Game</h2>
+            <p>Choose your destiny:</p>
+            <div id="optionsButtonDiv">
+                <div>
+                    <input type="radio" name="gameChoice" value="rock" id="rockInput" class="radio" checked>
+                    <span class="checkmark"></span><label for="rock">ROCK</label><br>
+                    <input type="radio" name="gameChoice" value="paper" id="paperInput">
+                    <label for="paper">PAPER</label><br>
+                    <input type="radio" name="gameChoice" value="scissors" id="scissorsInput">
+                    <label for="scissors">SCISSORS</label><br>  
+                </div>
+                <input type="button" id="playButton" value="PLAY">
+            </div>
+            
+            <p>Computer's choice: <span id="computerChoice" class="redText">Hey, dude, you choose first!</span></p>
+            <p>First to reach 10 wins ♦ USER <span id="userScore" class="redText">0</span> - <span id="computerScore" class="redText">0</span> COMPUTER</p>
+        </div>
+        <script src="temaJS2•1.js"></script>
+    </body>
+</html>

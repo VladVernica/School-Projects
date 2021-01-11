@@ -1,0 +1,638 @@
+/*---------- • ANIMATIONS • ----------*/
+
+/* Animation • Background Gradient Rotation */
+@keyframes bodyBackground {
+    0% {background-image: linear-gradient(0deg, white, aliceblue);}
+    2.85% {background-image: linear-gradient(10deg, white, aliceblue);}
+    5.7% {background-image: linear-gradient(20deg, white, aliceblue);}
+    8.55% {background-image: linear-gradient(30deg, white, aliceblue);}
+    11.4% {background-image: linear-gradient(40deg, white, aliceblue);}
+    14.25% {background-image: linear-gradient(50deg, white, aliceblue);}
+    17.1% {background-image: linear-gradient(60deg, white, aliceblue);}
+    19.95% {background-image: linear-gradient(70deg, white, aliceblue);}
+    22.8% {background-image: linear-gradient(80deg, white, aliceblue);}
+    25.65% {background-image: linear-gradient(90deg, white, aliceblue);}
+    28.5% {background-image: linear-gradient(100deg, white, aliceblue);}
+    31.35% {background-image: linear-gradient(110deg, white, aliceblue);}
+    34.2% {background-image: linear-gradient(120deg, white, aliceblue);}
+    37.05% {background-image: linear-gradient(130deg, white, aliceblue);}
+    39.9% {background-image: linear-gradient(140deg, white, aliceblue);}
+    42.75% {background-image: linear-gradient(150deg, white, aliceblue);}
+    45.6% {background-image: linear-gradient(160deg, white, aliceblue);}
+    48.45% {background-image: linear-gradient(170deg, white, aliceblue);}
+    51.3% {background-image: linear-gradient(180deg, white, aliceblue);}
+    54.15% {background-image: linear-gradient(190deg, white, aliceblue);}
+    57% {background-image: linear-gradient(200deg, white, aliceblue);}
+    59.85% {background-image: linear-gradient(210deg, white, aliceblue);}
+    62.7% {background-image: linear-gradient(220deg, white, aliceblue);}
+    65.55% {background-image: linear-gradient(230deg, white, aliceblue);}
+    68.4% {background-image: linear-gradient(240deg, white, aliceblue);}
+    71.25% {background-image: linear-gradient(250deg, white, aliceblue);}
+    74.1% {background-image: linear-gradient(260deg, white, aliceblue);}
+    76.95% {background-image: linear-gradient(270deg, white, aliceblue);}
+    79.8% {background-image: linear-gradient(280deg, white, aliceblue);}
+    82.65% {background-image: linear-gradient(290deg, white, aliceblue);}
+    85% {background-image: linear-gradient(300deg, white, aliceblue);}
+    88.35% {background-image: linear-gradient(310deg, white, aliceblue);}
+    91.2% {background-image: linear-gradient(320deg, white, aliceblue);}
+    94.05% {background-image: linear-gradient(330deg, white, aliceblue);}
+    96.9% {background-image: linear-gradient(340deg, white, aliceblue);}
+    100% {background-image: linear-gradient(350deg, white, aliceblue);}
+}
+
+/* Animation • Change Color • BLACK to LIGHT GRAY */
+@keyframes changeColor1 {
+    from {color: black;}
+    to {color: lightgray;}
+}
+
+/* Animation • Change Color • SALMON to ROYAL BLUE */
+@keyframes changeColor2 {
+    from {background-color: salmon;}
+    to {background-color: royalblue;}
+}
+
+/* Animation • Change Color • ROYAL BLUE to SALMON */
+@keyframes changeColor3 {
+    from {color: royalblue;}
+    to {color: salmon;}
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • SCROLLBAR • ----------*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+    background: salmon;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • BODY + GENERAL • ----------*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: bodyBackground 5s linear infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • TOP BAR • ----------*/
+
+#topBar {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    margin-top: -150px;
+    position: fixed;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: white;
+    overflow: hidden;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    border-color: salmon;
+}
+
+#topBarLogoDiv {
+    float: left;
+    line-height: 30px;
+    font-size: 30px;
+    font-family: 'Gugi';
+    cursor: pointer;
+}
+
+#topBarLogoW1 {
+    color: royalblue;
+}
+
+#topBarLogoW1:hover {
+    animation-name: changeColor3;
+    animation-duration: 2s;
+    color: salmon;
+}
+
+#topBarLogoW2 {
+    color: salmon;
+    margin-left: -9px;
+}
+
+#topBarButtonDiv {
+    float: right;
+}
+
+.topBarButton {
+    width: 160px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Quicksand';
+}
+
+#topBarButtonCart {
+    background-color: salmon;
+    color: white; 
+    border-color: transparent;
+}
+
+#topBarButtonCart:hover {
+    animation-name: changeColor2;
+    animation-duration: 2s;
+    background-color: royalblue;
+}
+
+#topBarButtonAdmin {
+    border-color: lightgray;
+    margin-left: 10px;
+}
+
+#topBarButtonAdmin:hover {
+    animation-name: changeColor1;
+    animation-duration: 2s;
+    color: lightgray;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- CONTENT ----------*/
+
+#content {
+    margin-top: 150px;
+    margin-left: 20%;
+    margin-right: 20%;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • PRODUCT BOX • ----------*/
+
+.productBox {
+    float: left;
+    margin: 15px;
+    padding: 10px;
+    padding-top: 20px;
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.productBoxImageDiv {
+    height: 150px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.productBoxImage {
+    max-height: 150px;
+    flex: none;
+}
+
+.productBoxName {
+    width: 200px;
+    font-weight: bold;
+}
+        
+.productBoxButtonDetails {
+    width: 200px;
+    height: 30px;
+    color: white;
+    background-color: salmon;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Quicksand';
+}
+
+.productBoxButtonDetails:hover {
+    animation-name: changeColor2;
+    animation-duration: 2s;
+    background-color: royalblue;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • DETAIL BOX • ----------*/
+
+#detailBox {
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#detailBoxContent {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#detailBoxImageDiv {
+    float: left;
+    height: 400px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#detailBoxImage {
+    max-height: 400px;
+    flex: none;
+}
+
+#detailBoxTextDiv {
+    float: right;
+    width: 300px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    text-align: left;
+}
+
+#detailBoxName {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#detailBoxDescription {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    width: 300px;
+    height: 110px;
+    font-size: 13px;
+    text-align: justify;
+}
+
+#detailBoxQuantity {
+    display: inline;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#detaiBoxInput {
+    font-family: 'Quicksand';
+    width: 50px;
+    height: 20px;
+    border: solid 0.5px lightgray;
+    border-radius: 20px;
+    text-align: center;
+    outline-color: transparent;
+}
+
+#detailBoxButtonAdd {
+    width: 300px;
+    height: 30px;
+    color: white;
+    background-color: salmon;
+    margin-top: 20px;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Quicksand';
+}
+
+#detailBoxButtonAdd:hover {
+    animation-name: changeColor2;
+    animation-duration: 2s;
+    background-color: royalblue;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • CART BOX • ----------*/
+
+#cartBox {
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#cartBoxTitle {
+    font-size: 30px;
+    margin: 0;
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.cartBoxTable {
+    float: left;
+    border-collapse: collapse;
+    width: 65%;
+    margin-left: 50px;
+}
+
+#cartBoxTableThead {
+    color: salmon;
+    border-bottom: 1px solid;
+    border-color: lightgray;
+}
+
+.cartBoxTableTr {
+    border-bottom: 1px solid;
+    border-color: lightgray;
+}
+
+.cartBoxTableCell {
+    width: 80px;
+    height: 50px;
+    overflow: hidden;
+}
+
+
+.cartBoxTableCellName {
+    min-width: 100px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.cartBoxTableCellImage {
+    height: 50px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cartBoxTableImage {
+    max-height: 50px;
+    flex: none;
+    overflow: hidden;
+}
+
+.cartBoxTableQuantity {
+    width: 50px;
+    display: inline-block;
+    line-height: 50px;
+}
+
+.cartBoxTableButton {
+    color: royalblue;
+    cursor: pointer;
+}
+
+.cartBoxTableButton:hover {
+    animation-name: changeColor3;
+    animation-duration: 2s;
+    color: salmon;
+}
+
+#cartBoxRightDiv {
+    float: right;
+    width: 160px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.cartBoxRightText {
+    margin-bottom: 5px;
+    color: gray;
+}
+
+#cartBoxRightTotal {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#cartBoxRightButtonBuy {
+    width: 160px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Quicksand';
+    background-color: salmon;
+    color: white; 
+}
+
+#cartBoxRightButtonBuy:hover {
+    animation-name: changeColor2;
+    animation-duration: 2s;
+    background-color: royalblue;
+}
+
+/*---------- • • • • • ----------*/
+
+
+
+
+
+/*---------- • ADMIN BOX • ----------*/
+
+#adminBox {
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 50px;
+    background-color: white;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#adminBoxTitleDiv {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+#adminBoxTitle {
+    float: left;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0;
+    margin-left: 50px;
+}
+
+#adminBoxButtonAddProduct {
+    float: right;
+    margin-right: 50px;
+    width: 240px;
+    height: 30px;
+    color: white;
+    background-color: salmon;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Quicksand';
+}
+
+#adminBoxButtonAddProduct:hover {
+    animation-name: changeColor2;
+    animation-duration: 2s;
+    background-color: royalblue;
+}
+
+.adminBoxTable {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+
+#adminBoxTableThead {
+    color: salmon;
+    border-bottom: 1px solid;
+    border-color: lightgray;
+}
+
+.adminBoxTableTr {
+    border-bottom: 1px solid;
+    border-color: lightgray;
+}
+
+.adminBoxTableCell {
+    width: 80px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.adminBoxTableCellName {
+    min-width: 100px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.adminBoxTableCellImage {
+    height: 50px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.adminBoxTableImage {
+    max-height: 50px;
+    flex: none;
+}
+
+.adminBoxTableButton {
+    color: royalblue;
+    cursor: pointer;
+}
+
+.adminBoxTableButton:hover {
+    animation-name: changeColor3;
+    animation-duration: 2s;
+    color: salmon;
+}
+
+.adminBoxTitleDiv {
+    width: 90%;
+    margin: auto;
+}
+
+#adminBoxForm {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.adminBoxFormEntry {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 25px;
+}
+
+.adminBoxFormLabel {
+    font-size: 15px;
+    float: left;
+    width: 15%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.adminBoxFormInput {
+    float: right;
+    width: 70%;
+    height: 25px;
+    margin-right: 5%;
+}
+
+#adminBoxFormTextArea {
+    float: right;
+    width: 70%;
+    height: 100px;
+    margin-right: 5%;
+    resize: none;
+}
+
+/*---------- • • • • • ----------*/

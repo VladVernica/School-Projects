@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tema DOM | Catalog</title>
+    <link rel="stylesheet" type="text/css" href="temaDOMcatalog.css" />
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <script src="temaDOMcatalog.js"></script>
+</head>
+<body>
+    <div id="leftDiv">
+        <h1>Lista Elevi</h1>
+        <div class="borderDiv">
+            <span>Nume:</span>
+            <input type="text" id="leftInput">
+            <button onclick="adaugaElev(document.getElementById('leftTable'), document.getElementById('leftTbody'), document.getElementById('leftInput').value)">Adauga elev</button>
+        </div>
+        <div class="borderDiv">
+            <a onclick="sortAsc(document.getElementById('leftTbody'), 1)">Sorteaza ascendent dupa medie note</a><br>
+            <a onclick="sortDsc(document.getElementById('leftTbody'), 1)">Sorteaza descendent dupa medie note</a>
+            <p id="paragraf">nici un elev adaugat</p>
+            <table id="leftTable" style="display: none;">
+                <thead>
+                    <th>Nume</th>
+                    <th>Medie note</th>
+                </thead>
+                <tbody id="leftTbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="rightDiv" style="display: none;">
+        <button id="ascundeNote" onclick="ascundeNote(this.parentElement, document.getElementById('leftDiv'))">Ascunde notele</button>
+        <h1>Note Elev</h1>
+        <div class="borderDiv">
+            <span>Nota:</span>
+            <input min="1" max="10" type="number" id="rightInput">
+            <button onclick="adaugaNota(parseInt(document.getElementById('rightInput').value))">Adauga nota</button>
+        </div>
+        <div class="borderDiv">
+            <a onclick="sortAsc(document.getElementById('rightTbody'), 0)">Sorteaza ascendent notele</a><br>
+            <a onclick="sortDsc(document.getElementById('rightTbody'), 0)">Sorteaza descendent notele</a>
+            <table id="rightTable">
+                <thead>
+                    <th>Nota</th>
+                </thead>
+                <tbody id="rightTbody"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

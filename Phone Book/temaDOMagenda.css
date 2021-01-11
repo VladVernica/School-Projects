@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: wheat;
+}
+
+#titleDiv {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+input {
+    height: 20px;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    vertical-align: middle;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: darkblue;
+}
+
+#domDiv {
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding: 30px 0 30px 0;
+    background-color: orange;
+    border-radius: 10px;
+    display: none;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+}
+
+th {
+    height: 30px;
+    width: 125px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+td {
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: underline;
+    color: darkslateblue;
+}
+
+a:hover {
+    cursor: pointer;
+}

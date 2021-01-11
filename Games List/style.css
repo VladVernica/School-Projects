@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0 0 100px 0;
+    text-align: center;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-image: url("https://images2.alphacoders.com/870/870882.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 300px;
+    margin: 5px 0 40px 0;
+    padding: 0;
+}
+
+section {
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 300px;
+    font-family: 'Ranchers';
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+#table_index {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+}
+
+.table_row_index {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 0 0 0;
+}
+
+.game_wrapper_index {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.game_img_index {
+    width: 300px;
+    height: 230px;
+    object-fit: cover;
+}
+
+.game_title_index {
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0.4));
+    font-family: 'Quicksand';
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 0 6px 0;
+    line-height: 25px;
+    font-size: 20px;
+    overflow: hidden;
+    border-top: 3px solid rgba(255, 255, 255, 0.6);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+}
+
+.game_button_index {
+    height: 20px;
+    border-radius: 5px;
+    line-height: 20px;
+    font-family: 'Quicksand';
+    width: 97px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 7px 0 0 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+#add_section_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.game_button_index:hover {
+    border-left: 3px solid rgba(255, 255, 255, 0.6);
+    border-right: 3px solid rgba(255, 255, 255, 0.6);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0.4));
+}
+
+#section_details {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+}
+
+#left_details {
+    display: flex;
+    flex-direction: row;
+}
+
+#right_details {
+    width: 600px;
+    height: 460px;
+    text-align: justify;
+    padding-left: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#game_img_details {
+    width: 600px;
+    height: 460px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#game_title_details {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#game_description_details {
+    font-size: 15px;
+    margin: 50px 0 50px 0;
+    padding: 0;
+}
+
+#game_edit_details {
+    height: 30px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+
+}
+
+.edit_section {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 0;
+}
+
+.edit_section span {
+    text-align: left;
+    margin-top: 20px;
+    padding: 0 15px 5px 15px;
+}
+
+.edit_section input {
+    height: 25px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 0px 15px 0px 15px;
+    font-family: 'Quicksand';
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+.edit_section input:focus {
+    background-color: white;
+}
+
+.edit_section textarea {
+    height: 80px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    resize: none;
+    font-size: 15px;
+    padding: 5px 15px 5px 15px;
+    font-family: 'Quicksand';
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+.edit_section textarea:focus {
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+input.redBackground, textarea.redBackground {
+    background-color: rgba(240, 40, 70, 0.6);
+    color: white;
+}
+
+input.redBackground:focus, textarea.redBackground:focus {
+    background-color: rgb(240, 40, 70);
+}

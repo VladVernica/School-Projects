@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ADMIN</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="main.js"></script>
+</head>
+
+<body onload="fillAdminContent()">
+    <div id="topBar">
+        <a href="index.html">
+            <div id="topBarLogoDiv">
+                <span id="topBarLogoW1">VERNI</span>
+                <span id="topBarLogoW2">market</span>
+            </div>
+        </a>
+    </div>
+    <div id="content">
+            <div id="adminBox">
+                <div id="adminBoxTitleDiv">
+                    <h1 id="adminBoxTitle">Administrator</h1>
+                    <button id="adminBoxButtonAddProduct" onclick="goToForm()">+ ADAUGĂ PRODUS NOU</button>
+                </div>
+                <table class="adminBoxTable">
+                    <thead id="adminBoxTableThead">
+                        <th class="adminBoxTableCell">Imagine</th>
+                        <th class="adminBoxTableCellName">Nume</th>
+                        <th class="adminBoxTableCell">Preț</th>
+                        <th class="adminBoxTableCell">Cantitate</th>
+                        <th class="adminBoxTableCell"></th>
+                    </thead>
+                    <tbody id="adminBoxTableTbody">
+                        <!-- Hard typed product examples - START -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/mj6Gnb"></td>
+                            <td class="adminBoxTableCellName">iPhone X</td>
+                            <td class="adminBoxTableCell">5399</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/1AZDZo"></td>
+                            <td class="adminBoxTableCellName">Huawei P20 Pro</td>
+                            <td class="adminBoxTableCell">3899</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/uPQSLE"></td>
+                            <td class="adminBoxTableCellName">Google Pixel 2</td>
+                            <td class="adminBoxTableCell">3299</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/quukdq"></td>
+                            <td class="adminBoxTableCellName">OnePlus 6</td>
+                            <td class="adminBoxTableCell">3699</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/UTVKWf"></td>
+                            <td class="adminBoxTableCellName">Xiaomi MI Mix 2S</td>
+                            <td class="adminBoxTableCell">3699</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/rzgnwu"></td>
+                            <td class="adminBoxTableCellName">Samsung Galaxy S9+</td>
+                            <td class="adminBoxTableCell">4399</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/ccJ2pA"></td>
+                            <td class="adminBoxTableCellName">Sony Xperia XZ2</td>
+                            <td class="adminBoxTableCell">3499</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- • • • -->
+                        <tr class="adminBoxTableTr hidden">
+                            <td class="adminBoxTableCell"><img class="adminBoxTableImage" src="https://goo.gl/ihbBhr"></td>
+                            <td class="adminBoxTableCellName">iPhone 8</td>
+                            <td class="adminBoxTableCell">3999</td>
+                            <td class="adminBoxTableCell">300</td>
+                            <td class="adminBoxTableCell"><a class="adminBoxTableButton" onclick="">Remove</a></td>
+                        </tr>
+                        <!-- Hard typed product examples - End -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+
+</html>

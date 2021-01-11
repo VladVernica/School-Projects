@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titlu {
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    line-height: 200px;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    margin: 15px 0 15px 0;
+}
+
+p {
+    margin: 0 50px 10px 50px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 500px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.tema {
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    border-top-style: double;
+    border-top-width: 3px;
+    border-color: black;
+}

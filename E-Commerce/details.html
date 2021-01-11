@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DETAILS</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="main.js"></script>
+</head>
+
+<body onload="fillDetailsContent(getQueryVariable('id'))">
+    <div id="topBar">
+        <a href="index.html">
+            <div id="topBarLogoDiv">
+                <span id="topBarLogoW1">VERNI</span>
+                <span id="topBarLogoW2">market</span>
+            </div>
+        </a>
+        <div id="topBarButtonDiv">
+            <button class="topBarButton" id="topBarButtonCart" onclick="goToCart()">COȘ CUMPĂRĂTURI</button>
+            <button class="topBarButton" id="topBarButtonAdmin" onclick="goToAdmin()">ADMIN</button>
+        </div>
+    </div>
+    <div id="content">
+        <div id="detailBox">
+            <div id="detailBoxContent">
+                <!-- Hard typed product example - START -->
+                <div class="hidden" id="detailBoxImageDiv">
+                    <img class="hidden" id="detailBoxImage" src="https://goo.gl/mj6Gnb">
+                </div>
+                <div class="hidden" id="detailBoxTextDiv">
+                    <div id="detailBoxName">iPhone X</div>
+                    <div id="detailBoxPrice">5399 LEI</div>
+                    <div id="detailBoxDescription">
+                        Fără îndoială, ecranul care ocupă aproape întreaga suprafață a părții frontale, cu excepția unei zone superioare dedicată
+                        difuzorului, reprezintă principalul punct de reper al telefonului. Practic, marginile sunt aproape
+                        insesizabile, spatele este realizat de asemenea din sticlă, iar părțile laterale sunt produse din
+                        oțel. Pe laterala dreaptă a fost integrat, ca de obicei, și butonul de Power, însă acesta are o lungime
+                        mai mare.
+                    </div>
+                    <p id="detailBoxStock">În stoc: 300</p>
+                    <p id="detailBoxQuantity">Cantitate:</p>
+                    <input type="number" id="detaiBoxInput" value="0" min="0">
+                    <button id="detailBoxButtonAdd">ADAUGĂ ÎN COȘ</button>
+                </div>
+                <!-- Hard typed product example - End -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

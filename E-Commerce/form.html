@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORMULAR ADĂUGARE PRODUS</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="topBar">
+        <a href="index.html">
+            <div id="topBarLogoDiv">
+                <span id="topBarLogoW1">VERNI</span>
+                <span id="topBarLogoW2">market</span>
+            </div>
+        </a>
+    </div>
+    <div id="content">
+            <div id="adminBox">
+                <div id="adminBoxTitleDiv">
+                    <h1 id="adminBoxTitle">Formular</h1>
+                    <button id="adminBoxButtonAddProduct" onclick="addProduct()">+ ADAUGĂ PRODUS</button>
+                </div>
+                <div id="adminBoxForm">
+                    <div class="adminBoxFormEntry">
+                        <h3 class="adminBoxFormLabel">Imagine:</h3>
+                        <input class="adminBoxFormInput" id="adminBoxFormInputImage" type="text">
+                    </div>
+                    <div class="adminBoxFormEntry">
+                        <h3 class="adminBoxFormLabel">Nume:</h3>
+                        <input class="adminBoxFormInput" id="adminBoxFormInputName" type="text">
+                    </div>
+                    <div class="adminBoxFormEntry">
+                        <h3 class="adminBoxFormLabel">Preț:</h3>
+                        <input class="adminBoxFormInput" id="adminBoxFormInputPrice" type="number">
+                    </div>
+                    <div class="adminBoxFormEntry">
+                        <h3 class="adminBoxFormLabel">Stoc:</h3>
+                        <input class="adminBoxFormInput" id="adminBoxFormInputStock" type="number">
+                    </div>
+                    <div class="adminBoxFormEntry">
+                        <h3 class="adminBoxFormLabel">Descriere:</h3>
+                        <textarea id="adminBoxFormTextArea"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

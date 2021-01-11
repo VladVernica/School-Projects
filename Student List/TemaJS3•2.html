@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tema JS 3•2</title>
+    <link rel="stylesheet" href="TemaJS3•2.css">
+    <link rel="stylesheet" href="fontAwesome/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Montez|Gugi' rel='stylesheet'>
+</head>
+<body>
+    <div id="lista_elevi_wrapper">
+        <h1>lista elevi</h1>
+        <div class="input_area">
+            <input type="text" placeholder="adaugati elev" id="input_nume" maxlength="17">
+            <button id="buton_adauga_elev" class="butoane_adauga"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+        </div>
+        <div>
+            <button class="butoane_sortare" id="sorteaza_asc_elevi">SORTEAZA ↧</button>
+            <button class="butoane_sortare" id="sorteaza_desc_elevi">SORTEAZA ↥</button>
+        </div>
+        <table id="tabel_elevi">
+            <thead id="thead_elevi"></thead>
+            <tbody id="tbody_elevi"></tbody>
+        </table>
+    </div>
+    <div id="note_elev_wrapper" style="display: none;">
+        <h1 id="nume_elev">Andrei</h1>
+        <div class="input_area">
+            <button id="buton_ascunde"><i class="fas fa-eye-slash"></i></button>
+            <input type="number" placeholder="adaugati nota" id="input_nota" min="1" max="10">
+            <button id="buton_adauga_nota" class="butoane_adauga"><i class="fas fa-plus"></i></i></button>
+        </div>
+        <div>
+            <button class="butoane_sortare" id="sorteaza_asc_note">SORTEAZA ↧</button>
+            <button class="butoane_sortare" id="sorteaza_desc_note">SORTEAZA ↥</button>
+        </div>
+        <table id="tabel_note">
+            <thead id="thead_note">
+                <th>NOTE</th>
+            </thead>
+            <tbody id="tbody_note"></tbody>
+        </table>
+    </div>
+    <script src="TemaJS3•2.js"></script>
+</body>
+</html>
